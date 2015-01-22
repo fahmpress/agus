@@ -15,6 +15,7 @@
 	<link href="asset-layoutit/css/bootstrap.min.css" rel="stylesheet">
 	<link href="asset-layoutit/css/style.css" rel="stylesheet">
 	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="custom.css" rel="stylesheet">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -35,11 +36,9 @@
 
 <body>
 <div class="container">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Super Market Online</a>
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.jsp">Super Market Online</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -48,37 +47,11 @@
 							<a href="#"> Bantuan </a>
 						</li>
 						<li>
-							<a href="daftar_user.jsp?link=home"> Daftar </a>
+							<a href="daftar_user.jsp"> Daftar </a>
 						</li>
 						<li>
-							<a href="user_login.jsp?link=home"> Login </a>
+							<a href="index.jsp?link=login"> Login </a>
 						</li>
-						<!--
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-								<li>
-									<a href="#">Another action</a>
-								</li>
-								<li>
-									<a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">One more separated link</a>
-								</li>
-							</ul>
-						</li>
-						-->
 					</ul>
 					<form class="navbar-form navbar-left" role="search">
 						<div class="form-group">
@@ -89,83 +62,36 @@
 				</div>
 				
 			</nav>
-			
-			<div class="jumbotron" style="margin-top: 70px;">
-				<h1>
-					Hello, world!
-				</h1>
-				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-				</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
-				</p>
-			</div>
-			
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-11 col-lg-offset-0">
-		<p> Pilih Kategori </p>
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-md-4 column">
-			<div class="panel panel-default">
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-male"></i> Pakaian </a>
-				</div>
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-female"></i> Kecantikan </a>
-				</div>
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-home"></i> Rumah Tangga </a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 column">
-			<div class="panel panel-default">
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-tablet"></i> Handphone </a>
-				</div>
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-laptop"></i> Komputer </a>
-				</div>
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-support"></i> Olahraga </a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 column">
-			<div class="panel panel-default">
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-cutlery"></i> Makanan & Minuman </a>
-				</div>
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-book"></i> Buku </a>
-				</div>
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-film"></i> Film </a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-md-4 column">
-			<img alt="140x140" src="http://lorempixel.com/140/140/">
-		</div>
-		<div class="col-md-4 column">
-			<img alt="140x140" src="http://lorempixel.com/140/140/">
-		</div>
-		<div class="col-md-4 column">
-			<img alt="140x140" src="http://lorempixel.com/140/140/">
-		</div>
-	</div>
+    
 	<div class="row clearfix">
 		<div class="col-md-12 column">
-		puter
+                    <%
+                    if (request.getParameter("link")==null){
+                    %>
+                    <%@include file="index_user.jsp" %>
+                    <% } else { %>
+                    <%@include file="menu-user.jsp" %>
+                    <% } %>
 		</div>
 	</div>
+	
+	
 </div>
+<br />
+<footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © Supermarket Online | Agus Hermawan 2015. All right reserved. </p>
+            <div class="pull-right">
+                <div class="text-center center-block">
+                <a href="https://www.facebook.com/pbs.zoestho"><i id="social" class="fa fa-facebook-square fa-3x"></i></a>
+	            <a href="#"><i id="social" class="fa fa-twitter-square fa-3x"></i></a>
+	            <a href="#"><i id="social" class="fa fa-google-plus-square fa-3x"></i></a>
+	            <a href="mailto:agushermawan93@gmail.com"><i id="social" class="fa fa-envelope-square fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
 </body>
 </html>
