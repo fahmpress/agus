@@ -23,39 +23,39 @@
 		<div class="col-md-4 column">
 			<div class="panel panel-default">
 				<div class="panel-footer">
-					<a href="#"><i class="fa fa-male"></i> Pakaian </a>
+					<a href="index.jsp?link=pakaian"><i class="fa fa-male"></i> Pakaian </a>
 				</div>
 				<div class="panel-footer">
-					<a href="#"><i class="fa fa-female"></i> Kecantikan </a>
+					<a href="index.jsp?link=kecantikan"><i class="fa fa-female"></i> Kecantikan </a>
 				</div>
 				<div class="panel-footer">
-					<a href="#"><i class="fa fa-home"></i> Rumah Tangga </a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 column">
-			<div class="panel panel-default">
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-tablet"></i> Handphone </a>
-				</div>
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-laptop"></i> Komputer </a>
-				</div>
-				<div class="panel-footer">
-					<a href="#"><i class="fa fa-support"></i> Olahraga </a>
+					<a href="index.jsp?link=rumahtangga"><i class="fa fa-home"></i> Rumah Tangga </a>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4 column">
 			<div class="panel panel-default">
 				<div class="panel-footer">
-					<a href="#"><i class="fa fa-cutlery"></i> Makanan & Minuman </a>
+					<a href="index.jsp?link=hp"><i class="fa fa-tablet"></i> Handphone </a>
 				</div>
 				<div class="panel-footer">
-					<a href="#"><i class="fa fa-book"></i> Buku </a>
+					<a href="index.jsp?link=komputer"><i class="fa fa-laptop"></i> Komputer </a>
 				</div>
 				<div class="panel-footer">
-					<a href="#"><i class="fa fa-film"></i> Film </a>
+					<a href="index.jsp?link=olahraga"><i class="fa fa-support"></i> Olahraga </a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 column">
+			<div class="panel panel-default">
+				<div class="panel-footer">
+					<a href="index.jsp?link=makanan"><i class="fa fa-cutlery"></i> Makanan & Minuman </a>
+				</div>
+				<div class="panel-footer">
+					<a href="index.jsp?link=buku"><i class="fa fa-book"></i> Buku </a>
+				</div>
+				<div class="panel-footer">
+					<a href="index.jsp?link=film"><i class="fa fa-film"></i> Film </a>
 				</div>
 			</div>
 		</div>
